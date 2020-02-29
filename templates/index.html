@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+
+
+</body>
+    <div class="container">
+            <div class ="jumbotron">
+            <center>
+                <h1>Mission to Mars</h1>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape new NASA Data</a>
+                  </p>
+            </center>
+            </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>This is the latest article from NASA.</h2>
+            <h4>{{NASA.News_Title }}</h4>
+            <p>{{NASA.Description}} </p>
+          </div>
+        </div>
+      </div>
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-md-8 big_box">
+                <h>Featured image of the day.</h>
+                    <img src="{{NASA.featured_image_url}}" alt="Mars featured image" />
+                  </div>
+         <div class="col-md-4">
+            <div class="row weather-box">
+                <div class="col-md-12">
+                    <h>The current weather on Mars</h>
+                    <p>
+                        {{NASA.Weather}}
+                    </p>
+                </div>
+            </div>
+          
+
+ 
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous">
+</script>
+    
